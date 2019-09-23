@@ -13,6 +13,7 @@ struct ContentView: View {
         Text("Hello World")
         Text("second commit")
         Text("third commit")
+        Text("4")
     }
 }
 
