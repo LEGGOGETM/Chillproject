@@ -8,14 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		EA0D93832338BEFC0081CA1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0D93822338BEFC0081CA1F /* AppDelegate.swift */; };
-		EA0D93852338BEFC0081CA1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0D93842338BEFC0081CA1F /* SceneDelegate.swift */; };
 		EA0D93882338BEFC0081CA1F /* Chillproject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA0D93862338BEFC0081CA1F /* Chillproject.xcdatamodeld */; };
-		EA0D938A2338BEFC0081CA1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0D93892338BEFC0081CA1F /* ContentView.swift */; };
 		EA0D938C2338BEFD0081CA1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA0D938B2338BEFD0081CA1F /* Assets.xcassets */; };
 		EA0D938F2338BEFD0081CA1F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA0D938E2338BEFD0081CA1F /* Preview Assets.xcassets */; };
 		EA0D93922338BEFD0081CA1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA0D93902338BEFD0081CA1F /* LaunchScreen.storyboard */; };
 		EA0D939D2338BEFD0081CA1F /* ChillprojectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0D939C2338BEFD0081CA1F /* ChillprojectTests.swift */; };
 		EA0D93A82338BEFD0081CA1F /* ChillprojectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0D93A72338BEFD0081CA1F /* ChillprojectUITests.swift */; };
+		EA0D941D2338EDB50081CA1F /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0D941B2338EDB50081CA1F /* KakaoOpenSDK.framework */; };
+		EA0D941E2338EDB50081CA1F /* KakaoMessageTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0D941C2338EDB50081CA1F /* KakaoMessageTemplate.framework */; };
+		EA0D94262338F0070081CA1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0D94252338F0070081CA1F /* SceneDelegate.swift */; };
+		EA0D944B2338F1420081CA1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0D944A2338F1420081CA1F /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +40,7 @@
 /* Begin PBXFileReference section */
 		EA0D937F2338BEFC0081CA1F /* Chillproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chillproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0D93822338BEFC0081CA1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA0D93842338BEFC0081CA1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EA0D93872338BEFC0081CA1F /* Chillproject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Chillproject.xcdatamodel; sourceTree = "<group>"; };
-		EA0D93892338BEFC0081CA1F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EA0D938B2338BEFD0081CA1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA0D938E2338BEFD0081CA1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EA0D93912338BEFD0081CA1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +51,11 @@
 		EA0D93A32338BEFD0081CA1F /* ChillprojectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChillprojectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0D93A72338BEFD0081CA1F /* ChillprojectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChillprojectUITests.swift; sourceTree = "<group>"; };
 		EA0D93A92338BEFD0081CA1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA0D941B2338EDB50081CA1F /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
+		EA0D941C2338EDB50081CA1F /* KakaoMessageTemplate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoMessageTemplate.framework; sourceTree = "<group>"; };
+		EA0D941F2338EE4B0081CA1F /* Chillproject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chillproject-Bridging-Header.h"; sourceTree = "<group>"; };
+		EA0D94252338F0070081CA1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EA0D944A2338F1420081CA1F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA0D941E2338EDB50081CA1F /* KakaoMessageTemplate.framework in Frameworks */,
+				EA0D941D2338EDB50081CA1F /* KakaoOpenSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +88,12 @@
 		EA0D93762338BEFC0081CA1F = {
 			isa = PBXGroup;
 			children = (
+				EA0D941A2338EDA00081CA1F /* Frameworks */,
 				EA0D93812338BEFC0081CA1F /* Chillproject */,
 				EA0D939B2338BEFD0081CA1F /* ChillprojectTests */,
 				EA0D93A62338BEFD0081CA1F /* ChillprojectUITests */,
 				EA0D93802338BEFC0081CA1F /* Products */,
+				EA0D941F2338EE4B0081CA1F /* Chillproject-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,8 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				EA0D93822338BEFC0081CA1F /* AppDelegate.swift */,
-				EA0D93842338BEFC0081CA1F /* SceneDelegate.swift */,
-				EA0D93892338BEFC0081CA1F /* ContentView.swift */,
+				EA0D94252338F0070081CA1F /* SceneDelegate.swift */,
+				EA0D944A2338F1420081CA1F /* ContentView.swift */,
 				EA0D938B2338BEFD0081CA1F /* Assets.xcassets */,
 				EA0D93902338BEFD0081CA1F /* LaunchScreen.storyboard */,
 				EA0D93932338BEFD0081CA1F /* Info.plist */,
@@ -137,6 +146,15 @@
 				EA0D93A92338BEFD0081CA1F /* Info.plist */,
 			);
 			path = ChillprojectUITests;
+			sourceTree = "<group>";
+		};
+		EA0D941A2338EDA00081CA1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA0D941C2338EDB50081CA1F /* KakaoMessageTemplate.framework */,
+				EA0D941B2338EDB50081CA1F /* KakaoOpenSDK.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +225,7 @@
 				TargetAttributes = {
 					EA0D937E2338BEFC0081CA1F = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					EA0D93972338BEFD0081CA1F = {
 						CreatedOnToolsVersion = 11.0;
@@ -270,10 +289,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA0D94262338F0070081CA1F /* SceneDelegate.swift in Sources */,
 				EA0D93882338BEFC0081CA1F /* Chillproject.xcdatamodeld in Sources */,
+				EA0D944B2338F1420081CA1F /* ContentView.swift in Sources */,
 				EA0D93832338BEFC0081CA1F /* AppDelegate.swift in Sources */,
-				EA0D938A2338BEFC0081CA1F /* ContentView.swift in Sources */,
-				EA0D93852338BEFC0081CA1F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,17 +457,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Chillproject/Preview Content\"";
 				DEVELOPMENT_TEAM = HGXANBUDEJ;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Chillproject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ssjs.Chillproject.Chillproject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Chillproject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -458,17 +485,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Chillproject/Preview Content\"";
 				DEVELOPMENT_TEAM = HGXANBUDEJ;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Chillproject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ssjs.Chillproject.Chillproject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Chillproject-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
