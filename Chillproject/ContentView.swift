@@ -10,10 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello World")
-        Text("second commit")
-        Text("third commit")
-        Text("4")
+        // branch
     }
 }
 
