@@ -29,31 +29,8 @@ struct KakaoLoginButton: UIViewRepresentable {
     
     func updateUIView(_ uiView: KOLoginButton, context: UIViewRepresentableContext<KakaoLoginButton>) {
     }
-
     
-    func login(_ sender: AnyObject) {
-        guard let session = KOSession.shared() else {
-            return
-        }
-
-        if session.isOpen() {
-            session.close()
-        }
-        
-        session.open(completionHandler: { (error) -> Void in
-            
-            if !session.isOpen() {
-                if let error = error as NSError? {
-                    switch error.code {
-                    case Int(KOErrorCancelled.rawValue):
-                        break
-                    default:
-                        break
-                    }
-                }
-            }
-        })
-    }
+    
     
     class Coordinator: NSObject {
         
@@ -64,8 +41,27 @@ struct KakaoLoginButton: UIViewRepresentable {
         }
         
         @objc func buttonPressed() {
-            print("clicked")
+            guard let session = KOSession.shared() else {
+                return
+            }
             
+            if session.isOpen() {
+                session.close()
+            }
+            
+            session.open(completionHandler: { (error) -> Void in
+                
+                if !session.isOpen() {
+                    if let error = error as NSError? {
+                        switch error.code {
+                        case Int(KOErrorCancelled.rawValue):
+                            break
+                        default:
+                            break
+                        }
+                    }
+                }
+            })
             // do something ...
         }
     }
