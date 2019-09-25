@@ -11,15 +11,40 @@ import KakaoOpenSDK
 
 // MARK: - 기존 카카오버튼 SwiftUI와 연결
 struct KakaoLoginButton: UIViewRepresentable {
-    typealias UIViewType = KOLoginButton
     
+    typealias UIViewType = KOLoginButton
     func makeUIView(context: UIViewRepresentableContext<KakaoLoginButton>) -> KOLoginButton {
         let button = KOLoginButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
+
         return button
     }
     
     func updateUIView(_ uiView: KOLoginButton, context: UIViewRepresentableContext<KakaoLoginButton>) {
-
     }
+    
+    func login(_ sender: AnyObject) {
+        guard let session = KOSession.shared() else {
+            return
+        }
+
+        if session.isOpen() {
+            session.close()
+        }
+        
+        session.open(completionHandler: { (error) -> Void in
+            
+            if !session.isOpen() {
+                if let error = error as NSError? {
+                    switch error.code {
+                    case Int(KOErrorCancelled.rawValue):
+                        break
+                    default:
+                        break
+                    }
+                }
+            }
+        })
+    }
+    
 }

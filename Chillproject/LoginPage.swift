@@ -13,13 +13,13 @@ struct LoginPage: View {
     var body: some View {
         
         VStack {
-            
             // 샘플코드
             KakaoLoginButton()
                 .frame(width: 350, height: 50)
                 .font(.system(size: 14))
             
         }
+        
     }
 }
 

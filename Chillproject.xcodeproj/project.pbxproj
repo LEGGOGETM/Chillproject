@@ -19,6 +19,7 @@
 		EA0D941D2338EDB50081CA1F /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0D941B2338EDB50081CA1F /* KakaoOpenSDK.framework */; };
 		EA0D941E2338EDB50081CA1F /* KakaoMessageTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0D941C2338EDB50081CA1F /* KakaoMessageTemplate.framework */; };
 		EA0D94262338F0070081CA1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0D94252338F0070081CA1F /* SceneDelegate.swift */; };
+		EA6C5819233B744700A5281B /* SessionCheckPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6C5818233B744700A5281B /* SessionCheckPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		EA0D941C2338EDB50081CA1F /* KakaoMessageTemplate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoMessageTemplate.framework; sourceTree = "<group>"; };
 		EA0D941F2338EE4B0081CA1F /* Chillproject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chillproject-Bridging-Header.h"; sourceTree = "<group>"; };
 		EA0D94252338F0070081CA1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EA6C5818233B744700A5281B /* SessionCheckPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCheckPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,9 +123,10 @@
 			isa = PBXGroup;
 			children = (
 				692BEE7B233AA43D0033C9F1 /* Interact */,
-				EA0D93822338BEFC0081CA1F /* AppDelegate.swift */,
 				EA0D94252338F0070081CA1F /* SceneDelegate.swift */,
+				EA0D93822338BEFC0081CA1F /* AppDelegate.swift */,
 				692BEE79233A97840033C9F1 /* LoginPage.swift */,
+				EA6C5818233B744700A5281B /* SessionCheckPage.swift */,
 				EA0D938B2338BEFD0081CA1F /* Assets.xcassets */,
 				EA0D93902338BEFD0081CA1F /* LaunchScreen.storyboard */,
 				EA0D93932338BEFD0081CA1F /* Info.plist */,
@@ -300,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA6C5819233B744700A5281B /* SessionCheckPage.swift in Sources */,
 				EA0D94262338F0070081CA1F /* SceneDelegate.swift in Sources */,
 				EA0D93882338BEFC0081CA1F /* Chillproject.xcdatamodeld in Sources */,
 				692BEE7A233A97840033C9F1 /* LoginPage.swift in Sources */,
@@ -483,7 +487,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ssjs.Chillproject.Chillproject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Chillproject-Bridging-Header.h";
@@ -511,7 +515,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ssjs.Chillproject.Chillproject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Chillproject-Bridging-Header.h";
