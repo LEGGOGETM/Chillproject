@@ -13,15 +13,23 @@ import KakaoOpenSDK
 struct KakaoLoginButton: UIViewRepresentable {
     
     typealias UIViewType = KOLoginButton
+    
+    func makeCoordinator() -> Coordinator {
+        Coordinator(self)
+    }
+    
     func makeUIView(context: UIViewRepresentableContext<KakaoLoginButton>) -> KOLoginButton {
         let button = KOLoginButton(type: .system)
-        button.translatesAutoresizingMaskIntoConstraints = false
-
+        button.addTarget(
+            context.coordinator,
+            action: #selector(Coordinator.buttonPressed),
+            for: .touchUpInside)
         return button
     }
     
     func updateUIView(_ uiView: KOLoginButton, context: UIViewRepresentableContext<KakaoLoginButton>) {
     }
+
     
     func login(_ sender: AnyObject) {
         guard let session = KOSession.shared() else {
@@ -45,6 +53,21 @@ struct KakaoLoginButton: UIViewRepresentable {
                 }
             }
         })
+    }
+    
+    class Coordinator: NSObject {
+        
+        var button: KakaoLoginButton
+        
+        init(_ button: KakaoLoginButton) {
+            self.button = button
+        }
+        
+        @objc func buttonPressed() {
+            print("clicked")
+            
+            // do something ...
+        }
     }
     
 }
