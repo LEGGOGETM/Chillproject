@@ -7,8 +7,6 @@
 //
 
 import SwiftUI
-import Foundation
-import KakaoOpenSDK
 
 struct LoginPage: View {
     
