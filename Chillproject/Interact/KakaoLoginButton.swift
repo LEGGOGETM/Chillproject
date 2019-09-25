@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import KakaoOpenSDK
 
 // MARK: - 기존 카카오버튼 SwiftUI와 연결
 struct KakaoLoginButton: UIViewRepresentable {
