@@ -29,9 +29,7 @@ struct KakaoLoginButton: UIViewRepresentable {
     
     func updateUIView(_ uiView: KOLoginButton, context: UIViewRepresentableContext<KakaoLoginButton>) {
     }
-    
-    
-    
+
     class Coordinator: NSObject {
         
         var button: KakaoLoginButton
@@ -62,7 +60,6 @@ struct KakaoLoginButton: UIViewRepresentable {
                     }
                 }
             })
-            // do something ...
         }
     }
     

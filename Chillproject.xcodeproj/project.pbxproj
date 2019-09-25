@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		692BEE7A233A97840033C9F1 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692BEE79233A97840033C9F1 /* LoginPage.swift */; };
 		692BEE7D233AA45C0033C9F1 /* KakaoLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692BEE7C233AA45C0033C9F1 /* KakaoLoginButton.swift */; };
 		EA0D93832338BEFC0081CA1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0D93822338BEFC0081CA1F /* AppDelegate.swift */; };
 		EA0D93882338BEFC0081CA1F /* Chillproject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA0D93862338BEFC0081CA1F /* Chillproject.xcdatamodeld */; };
@@ -40,7 +39,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		692BEE79233A97840033C9F1 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		692BEE7C233AA45C0033C9F1 /* KakaoLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginButton.swift; sourceTree = "<group>"; };
 		EA0D937F2338BEFC0081CA1F /* Chillproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chillproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0D93822338BEFC0081CA1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +95,20 @@
 			path = Interact;
 			sourceTree = "<group>";
 		};
+		69B8227F233BA7150070EACA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		69B82280233BA71D0070EACA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		EA0D93762338BEFC0081CA1F = {
 			isa = PBXGroup;
 			children = (
@@ -122,10 +134,11 @@
 		EA0D93812338BEFC0081CA1F /* Chillproject */ = {
 			isa = PBXGroup;
 			children = (
+				69B8227F233BA7150070EACA /* Models */,
+				69B82280233BA71D0070EACA /* Views */,
 				692BEE7B233AA43D0033C9F1 /* Interact */,
 				EA0D94252338F0070081CA1F /* SceneDelegate.swift */,
 				EA0D93822338BEFC0081CA1F /* AppDelegate.swift */,
-				692BEE79233A97840033C9F1 /* LoginPage.swift */,
 				EA6C5818233B744700A5281B /* SessionCheckPage.swift */,
 				EA0D938B2338BEFD0081CA1F /* Assets.xcassets */,
 				EA0D93902338BEFD0081CA1F /* LaunchScreen.storyboard */,
@@ -306,7 +319,6 @@
 				EA6C5819233B744700A5281B /* SessionCheckPage.swift in Sources */,
 				EA0D94262338F0070081CA1F /* SceneDelegate.swift in Sources */,
 				EA0D93882338BEFC0081CA1F /* Chillproject.xcdatamodeld in Sources */,
-				692BEE7A233A97840033C9F1 /* LoginPage.swift in Sources */,
 				692BEE7D233AA45C0033C9F1 /* KakaoLoginButton.swift in Sources */,
 				EA0D93832338BEFC0081CA1F /* AppDelegate.swift in Sources */,
 			);
