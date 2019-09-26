@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69129EF5233D0AC800542D9A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69129EF4233D0AC800542D9A /* Helper.swift */; };
 		692BEE7D233AA45C0033C9F1 /* KakaoLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692BEE7C233AA45C0033C9F1 /* KakaoLoginButton.swift */; };
 		EA0D93832338BEFC0081CA1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0D93822338BEFC0081CA1F /* AppDelegate.swift */; };
 		EA0D93882338BEFC0081CA1F /* Chillproject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA0D93862338BEFC0081CA1F /* Chillproject.xcdatamodeld */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		69129EF4233D0AC800542D9A /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		692BEE7C233AA45C0033C9F1 /* KakaoLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginButton.swift; sourceTree = "<group>"; };
 		EA0D937F2338BEFC0081CA1F /* Chillproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chillproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0D93822338BEFC0081CA1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69129EF3233D0AAA00542D9A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				69129EF4233D0AC800542D9A /* Helper.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		692BEE7B233AA43D0033C9F1 /* Interact */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +152,7 @@
 		EA0D93812338BEFC0081CA1F /* Chillproject */ = {
 			isa = PBXGroup;
 			children = (
+				69129EF3233D0AAA00542D9A /* Extension */,
 				69B8227F233BA7150070EACA /* Models */,
 				69B82280233BA71D0070EACA /* Views */,
 				692BEE7B233AA43D0033C9F1 /* Interact */,
@@ -333,6 +344,7 @@
 				EA0D93882338BEFC0081CA1F /* Chillproject.xcdatamodeld in Sources */,
 				692BEE7D233AA45C0033C9F1 /* KakaoLoginButton.swift in Sources */,
 				EA0D93832338BEFC0081CA1F /* AppDelegate.swift in Sources */,
+				69129EF5233D0AC800542D9A /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,9 +11,12 @@ import SwiftUI
 struct SessionCheckPage: View {
     
     var body: some View {
-        KakaoLoginButton()
-            .frame(width: 350, height: 50)
-            .font(.system(size: 14))
+
+        VStack {
+            KakaoLoginButton()
+                .frame(width: 350, height: 50)
+                .font(.system(size: 14))
+        }
     }
 }
 
