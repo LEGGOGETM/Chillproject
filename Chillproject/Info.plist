@@ -26,6 +26,14 @@
 				<string>kakao0ec209fbe9b93c7a81e5fd3ec5b651a7</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>googleAIzaSyBqeCo2S_mAt6ajHB5neJGpNdhjGG2q8PA</string>
+			</array>
+		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>

@@ -18,6 +18,9 @@
 		EA0D941D2338EDB50081CA1F /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0D941B2338EDB50081CA1F /* KakaoOpenSDK.framework */; };
 		EA0D941E2338EDB50081CA1F /* KakaoMessageTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0D941C2338EDB50081CA1F /* KakaoMessageTemplate.framework */; };
 		EA0D94262338F0070081CA1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0D94252338F0070081CA1F /* SceneDelegate.swift */; };
+		EA57F672233CC36100E0329C /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA57F66F233CC36100E0329C /* GoogleSignIn.framework */; };
+		EA57F673233CC36100E0329C /* GoogleSignInDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA57F670233CC36100E0329C /* GoogleSignInDependencies.framework */; };
+		EA57F674233CC36100E0329C /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EA57F671233CC36100E0329C /* GoogleSignIn.bundle */; };
 		EA6C5819233B744700A5281B /* SessionCheckPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6C5818233B744700A5281B /* SessionCheckPage.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +60,9 @@
 		EA0D941C2338EDB50081CA1F /* KakaoMessageTemplate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoMessageTemplate.framework; sourceTree = "<group>"; };
 		EA0D941F2338EE4B0081CA1F /* Chillproject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chillproject-Bridging-Header.h"; sourceTree = "<group>"; };
 		EA0D94252338F0070081CA1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EA57F66F233CC36100E0329C /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignIn.framework; sourceTree = "<group>"; };
+		EA57F670233CC36100E0329C /* GoogleSignInDependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignInDependencies.framework; sourceTree = "<group>"; };
+		EA57F671233CC36100E0329C /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleSignIn.bundle; sourceTree = "<group>"; };
 		EA6C5818233B744700A5281B /* SessionCheckPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCheckPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +72,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA0D941E2338EDB50081CA1F /* KakaoMessageTemplate.framework in Frameworks */,
+				EA57F672233CC36100E0329C /* GoogleSignIn.framework in Frameworks */,
+				EA57F673233CC36100E0329C /* GoogleSignInDependencies.framework in Frameworks */,
 				EA0D941D2338EDB50081CA1F /* KakaoOpenSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,6 +186,9 @@
 		EA0D941A2338EDA00081CA1F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA57F671233CC36100E0329C /* GoogleSignIn.bundle */,
+				EA57F66F233CC36100E0329C /* GoogleSignIn.framework */,
+				EA57F670233CC36100E0329C /* GoogleSignInDependencies.framework */,
 				EA0D941C2338EDB50081CA1F /* KakaoMessageTemplate.framework */,
 				EA0D941B2338EDB50081CA1F /* KakaoOpenSDK.framework */,
 			);
@@ -289,6 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA57F674233CC36100E0329C /* GoogleSignIn.bundle in Resources */,
 				EA0D93922338BEFD0081CA1F /* LaunchScreen.storyboard in Resources */,
 				EA0D938F2338BEFD0081CA1F /* Preview Assets.xcassets in Resources */,
 				EA0D938C2338BEFD0081CA1F /* Assets.xcassets in Resources */,
