@@ -15,7 +15,7 @@ struct SessionCheckPage: View {
         VStack {
             KakaoLoginButton()
                 .frame(width: 350, height: 50)
-                .font(.system(size: 14))
+                .font(.system(size: .medium))
         }
     }
 }
