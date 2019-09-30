@@ -13,6 +13,8 @@ struct SessionCheckPage: View {
     var body: some View {
 
         VStack {
+            
+            CircleImage("sunrise", .contents)
             KakaoLoginButton()
                 .frame(width: 350, height: 50)
                 .font(.system(size: .medium))

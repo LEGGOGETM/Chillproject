@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		69129EF5233D0AC800542D9A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69129EF4233D0AC800542D9A /* Helper.swift */; };
 		692BEE7D233AA45C0033C9F1 /* KakaoLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692BEE7C233AA45C0033C9F1 /* KakaoLoginButton.swift */; };
+		6967420A2341C3AF0093F5F8 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696742092341C3AF0093F5F8 /* CircleImage.swift */; };
 		EA0D93832338BEFC0081CA1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0D93822338BEFC0081CA1F /* AppDelegate.swift */; };
 		EA0D93882338BEFC0081CA1F /* Chillproject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA0D93862338BEFC0081CA1F /* Chillproject.xcdatamodeld */; };
 		EA0D938C2338BEFD0081CA1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA0D938B2338BEFD0081CA1F /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		69129EF4233D0AC800542D9A /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		692BEE7C233AA45C0033C9F1 /* KakaoLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginButton.swift; sourceTree = "<group>"; };
+		696742092341C3AF0093F5F8 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		EA0D937F2338BEFC0081CA1F /* Chillproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chillproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0D93822338BEFC0081CA1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA0D93872338BEFC0081CA1F /* Chillproject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Chillproject.xcdatamodel; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				69129EF4233D0AC800542D9A /* Helper.swift */,
+				696742092341C3AF0093F5F8 /* CircleImage.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				EA6C5819233B744700A5281B /* SessionCheckPage.swift in Sources */,
 				EA0D94262338F0070081CA1F /* SceneDelegate.swift in Sources */,
 				EA0D93882338BEFC0081CA1F /* Chillproject.xcdatamodeld in Sources */,
+				6967420A2341C3AF0093F5F8 /* CircleImage.swift in Sources */,
 				692BEE7D233AA45C0033C9F1 /* KakaoLoginButton.swift in Sources */,
 				EA0D93832338BEFC0081CA1F /* AppDelegate.swift in Sources */,
 				69129EF5233D0AC800542D9A /* Helper.swift in Sources */,

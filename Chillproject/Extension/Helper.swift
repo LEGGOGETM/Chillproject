@@ -30,4 +30,3 @@ extension Color {
         return rgb(r, g, b)
     }
 }
-
