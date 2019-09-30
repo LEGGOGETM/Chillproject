@@ -18,20 +18,19 @@ struct CircleImage: View {
     let name: String
     let size: CGFloat
     let mode: CircleMode
-
+    
     var body: some View {
+        
+        let image = Image(self.name)
+            .resizable()
+            .clipShape(Circle())
+            .frame(width: size, height: size)
+
         switch mode {
         case .contents:
-            return AnyView(Image(self.name)
-                .resizable()
-                .clipShape(Circle())
-                .frame(width: size, height: size))
-            
+            return AnyView(image)
         case .profile:
-            return AnyView(Image(self.name)
-                .resizable()
-                .clipShape(Circle())
-                .frame(width: size, height: size)
+            return AnyView(image
                 .overlay(Circle().stroke(Color.white, lineWidth: 2))
                 .shadow(radius: 10))
         }
