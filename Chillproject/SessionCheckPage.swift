@@ -10,11 +10,21 @@ import SwiftUI
 
 struct SessionCheckPage: View {
     
-    var body: some View {
+    @State var isPresented = false
+    @State var profileImage = UIImage(named: "default")!
 
+    var body: some View {
         VStack {
+            CircleImage(uiImage: profileImage, .profile)
+                .onTapGesture {
+                    self.isPresented.toggle()
+                }
+                .sheet(isPresented: $isPresented, content: {
+                    ImagePickerView(
+                        selectedImage: self.$profileImage,
+                        isPresented: self.$isPresented)
+                })
             
-            CircleImage("sunrise", .profile)
             KakaoLoginButton()
                 .frame(width: 350, height: 50)
                 .font(.system(size: .medium))

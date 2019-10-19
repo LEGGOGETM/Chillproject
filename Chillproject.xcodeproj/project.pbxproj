@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		69129EF5233D0AC800542D9A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69129EF4233D0AC800542D9A /* Helper.swift */; };
 		692BEE7D233AA45C0033C9F1 /* KakaoLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692BEE7C233AA45C0033C9F1 /* KakaoLoginButton.swift */; };
+		69385E1F235AFB8D00469F95 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69385E1E235AFB8D00469F95 /* ImagePickerView.swift */; };
 		6967420A2341C3AF0093F5F8 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696742092341C3AF0093F5F8 /* CircleImage.swift */; };
 		EA0D93832338BEFC0081CA1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0D93822338BEFC0081CA1F /* AppDelegate.swift */; };
 		EA0D93882338BEFC0081CA1F /* Chillproject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA0D93862338BEFC0081CA1F /* Chillproject.xcdatamodeld */; };
@@ -46,6 +47,7 @@
 /* Begin PBXFileReference section */
 		69129EF4233D0AC800542D9A /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		692BEE7C233AA45C0033C9F1 /* KakaoLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginButton.swift; sourceTree = "<group>"; };
+		69385E1E235AFB8D00469F95 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		696742092341C3AF0093F5F8 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		EA0D937F2338BEFC0081CA1F /* Chillproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chillproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0D93822338BEFC0081CA1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,12 +110,13 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		692BEE7B233AA43D0033C9F1 /* Interact */ = {
+		692BEE7B233AA43D0033C9F1 /* Interfacing */ = {
 			isa = PBXGroup;
 			children = (
 				692BEE7C233AA45C0033C9F1 /* KakaoLoginButton.swift */,
+				69385E1E235AFB8D00469F95 /* ImagePickerView.swift */,
 			);
-			path = Interact;
+			path = Interfacing;
 			sourceTree = "<group>";
 		};
 		69B8227F233BA7150070EACA /* Models */ = {
@@ -158,7 +161,7 @@
 				69129EF3233D0AAA00542D9A /* Extension */,
 				69B8227F233BA7150070EACA /* Models */,
 				69B82280233BA71D0070EACA /* Views */,
-				692BEE7B233AA43D0033C9F1 /* Interact */,
+				692BEE7B233AA43D0033C9F1 /* Interfacing */,
 				EA0D94252338F0070081CA1F /* SceneDelegate.swift */,
 				EA0D93822338BEFC0081CA1F /* AppDelegate.swift */,
 				EA6C5818233B744700A5281B /* SessionCheckPage.swift */,
@@ -346,6 +349,7 @@
 				EA0D94262338F0070081CA1F /* SceneDelegate.swift in Sources */,
 				EA0D93882338BEFC0081CA1F /* Chillproject.xcdatamodeld in Sources */,
 				6967420A2341C3AF0093F5F8 /* CircleImage.swift in Sources */,
+				69385E1F235AFB8D00469F95 /* ImagePickerView.swift in Sources */,
 				692BEE7D233AA45C0033C9F1 /* KakaoLoginButton.swift in Sources */,
 				EA0D93832338BEFC0081CA1F /* AppDelegate.swift in Sources */,
 				69129EF5233D0AC800542D9A /* Helper.swift in Sources */,

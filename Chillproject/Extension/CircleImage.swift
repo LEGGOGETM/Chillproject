@@ -8,6 +8,11 @@
 
 import SwiftUI
 
+enum ImageType {
+    case string(String)
+    case image(UIImage)
+}
+
 enum CircleMode: CGFloat {
     case contents = 100
     case profile = 200
@@ -15,32 +20,50 @@ enum CircleMode: CGFloat {
 
 struct CircleImage: View {
     
-    let name: String
-    let size: CGFloat
+    var imageType: ImageType
     let mode: CircleMode
     
-    var image: some View {
-        AnyView(Image(self.name)
-            .resizable()
-            .clipShape(Circle())
-            .frame(width: size, height: size))
+    var size: CGFloat {
+        return self.mode.rawValue
     }
     
-    var body: some View {
-
-        switch mode {
-        case .contents:
-            return AnyView(self.image)
-        case .profile:
-            return AnyView(self.image
-                .overlay(Circle().stroke(Color.white, lineWidth: 2))
-                .shadow(radius: 10))
+    var image: Image {
+        switch imageType {
+        case .string(let imageString):
+            return Image(imageString)
+        case .image(let image):
+            return Image(uiImage: image)
         }
     }
     
-    init(_ name: String, _ mode: CircleMode) {
-        self.name = name
+    var body: some View {
+        switch mode {
+        case .contents:
+            return AnyView(self.image
+                .resizable()
+                .clipShape(Circle())
+                .frame(width: size, height: size))
+        case .profile:
+            return AnyView(self.image
+                .resizable()
+                .clipShape(Circle())
+                .frame(width: size, height: size)
+                .overlay(Circle().stroke(Color.white, lineWidth: 2))
+                .shadow(radius: 10)
+                .scaledToFill())
+        }
+    }
+    
+    private init(_ imageType: ImageType, _ mode: CircleMode) {
         self.mode = mode
-        self.size = mode.rawValue
+        self.imageType = imageType
+    }
+
+    init(named: String, _ mode: CircleMode) {
+        self.init(ImageType.string(named), mode)
+    }
+    
+    init(uiImage: UIImage, _ mode: CircleMode) {
+        self.init(ImageType.image(uiImage), mode)
     }
 }

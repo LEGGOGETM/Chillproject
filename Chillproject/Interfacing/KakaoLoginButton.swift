@@ -11,11 +11,9 @@ import KakaoOpenSDK
 
 // MARK: - 기존 카카오버튼 SwiftUI와 연결
 struct KakaoLoginButton: UIViewRepresentable {
-    
-    typealias UIViewType = KOLoginButton
-    
-    func makeCoordinator() -> Coordinator {
-        Coordinator(self)
+
+    func makeCoordinator() -> KakaoLoginButton.Coordinator {
+        return Coordinator(self)
     }
     
     func makeUIView(context: UIViewRepresentableContext<KakaoLoginButton>) -> KOLoginButton {
@@ -27,7 +25,9 @@ struct KakaoLoginButton: UIViewRepresentable {
         return button
     }
     
-    func updateUIView(_ uiView: KOLoginButton, context: UIViewRepresentableContext<KakaoLoginButton>) {
+    func updateUIView(
+        _ uiView: KOLoginButton,
+        context: UIViewRepresentableContext<KakaoLoginButton>) {
     }
 
     class Coordinator: NSObject {
