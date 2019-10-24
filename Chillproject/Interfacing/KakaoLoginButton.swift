@@ -22,6 +22,7 @@ struct KakaoLoginButton: UIViewRepresentable {
             context.coordinator,
             action: #selector(Coordinator.buttonPressed),
             for: .touchUpInside)
+        button.tintColor = .kakaoBrown
         return button
     }
     

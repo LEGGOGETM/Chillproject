@@ -14,7 +14,8 @@ struct SessionCheckPage: View {
     @State var profileImage = UIImage(named: "default")!
 
     var body: some View {
-        VStack {
+        
+        VStack(spacing: 16) {
             CircleImage(uiImage: profileImage, .profile)
                 .onTapGesture {
                     self.isPresented.toggle()
@@ -26,7 +27,7 @@ struct SessionCheckPage: View {
                 })
             
             KakaoLoginButton()
-                .frame(width: 350, height: 50)
+                .frame(width: 300, height: 50)
                 .font(.system(size: .medium))
         }
     }

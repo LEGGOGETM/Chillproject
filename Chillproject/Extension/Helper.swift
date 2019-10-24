@@ -15,18 +15,28 @@ extension CGFloat {
     static let large: CGFloat = 28
 }
 
-// MARK: - Color
-extension Color {
-    static let defaultButton = hex(0x292929)
+// MARK: - UIColor
+extension UIColor {
     
-    static func rgb(_ red: Double, _ green: Double, _ blue: Double) -> Color {
-        return Color(red: red / 255, green: green / 255, blue: blue / 255)
+    var color: Color {
+        return Color(self)
     }
     
-    static func hex(_ value: UInt32) -> Color {
-        let r = Double((value >> 16) & 0xff)
-        let g = Double((value >> 8) & 0xff)
-        let b = Double((value) & 0xff)
+    static let defaultButton = hex(0x292929)
+    static let kakaoBrown = hex(0x452007)
+    
+    static func rgb(_ red: CGFloat, _ green: CGFloat, _ blue: CGFloat) -> UIColor {
+        return UIColor(
+            red: red / 255,
+            green: green / 255,
+            blue: blue / 255,
+            alpha: 1.0)
+    }
+    
+    static func hex(_ value: UInt32) -> UIColor {
+        let r = CGFloat((value >> 16) & 0xff)
+        let g = CGFloat((value >> 8) & 0xff)
+        let b = CGFloat((value) & 0xff)
         return rgb(r, g, b)
     }
 }
