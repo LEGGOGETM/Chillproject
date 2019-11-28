@@ -14,9 +14,18 @@ struct SessionCheckPage: View {
     @State var profileImage = UIImage(named: "default")!
 
     var body: some View {
-        
-        VStack(spacing: 16) {
-            CircleImage(uiImage: profileImage, .profile)
+                
+        VStack(spacing: 24) {
+            
+            VStack(alignment: .center) {
+                Text("Welcome to ")
+                    .customTitleText()
+                Text("ChillProject!")
+                    .customTitleText()
+                    .foregroundColor(.newPrimaryColor)
+            }.padding(.top, 24)
+            
+            CircleImage(uiImage: profileImage, .circle, .profile)
                 .onTapGesture {
                     self.isPresented.toggle()
                 }
@@ -29,7 +38,7 @@ struct SessionCheckPage: View {
             KakaoLoginButton()
                 .frame(width: 300, height: 50)
                 .font(.system(size: .medium))
-        }
+        }.padding()
     }
 }
 

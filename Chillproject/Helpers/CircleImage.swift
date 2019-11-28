@@ -13,16 +13,21 @@ enum ImageType {
     case image(UIImage)
 }
 
-enum CircleMode: CGFloat {
-    case contents = 100
+enum ImageMode: CGFloat {
+    case normal = 100
     case profile = 200
+}
+
+enum ImageShape {
+    case rectangle
+    case circle
 }
 
 struct CircleImage: View {
     
     var imageType: ImageType
-    let mode: CircleMode
-    
+    let mode: ImageMode
+    let shape: ImageShape
     var size: CGFloat {
         return self.mode.rawValue
     }
@@ -37,8 +42,9 @@ struct CircleImage: View {
     }
     
     var body: some View {
+
         switch mode {
-        case .contents:
+        case .normal:
             return AnyView(self.image
                 .resizable()
                 .clipShape(Circle())
@@ -54,16 +60,17 @@ struct CircleImage: View {
         }
     }
     
-    private init(_ imageType: ImageType, _ mode: CircleMode) {
+    private init(_ imageType: ImageType, _ shape: ImageShape, _ mode: ImageMode) {
         self.mode = mode
         self.imageType = imageType
+        self.shape = shape
     }
 
-    init(named: String, _ mode: CircleMode) {
-        self.init(ImageType.string(named), mode)
+    init(named: String, _ shape: ImageShape, _ mode: ImageMode) {
+        self.init(ImageType.string(named), shape, mode)
     }
     
-    init(uiImage: UIImage, _ mode: CircleMode) {
-        self.init(ImageType.image(uiImage), mode)
+    init(uiImage: UIImage, _ shape: ImageShape, _ mode: ImageMode) {
+        self.init(ImageType.image(uiImage), shape, mode)
     }
 }

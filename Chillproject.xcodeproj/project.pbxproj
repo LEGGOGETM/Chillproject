@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		69129EF5233D0AC800542D9A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69129EF4233D0AC800542D9A /* Helper.swift */; };
+		69129EF5233D0AC800542D9A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69129EF4233D0AC800542D9A /* Color.swift */; };
 		692BEE7D233AA45C0033C9F1 /* KakaoLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692BEE7C233AA45C0033C9F1 /* KakaoLoginButton.swift */; };
 		69385E1F235AFB8D00469F95 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69385E1E235AFB8D00469F95 /* ImagePickerView.swift */; };
 		6967420A2341C3AF0093F5F8 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696742092341C3AF0093F5F8 /* CircleImage.swift */; };
+		69A6DA102390338B001E0992 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A6DA0F2390338B001E0992 /* Text.swift */; };
 		69A8AA01236206C500915D38 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A8AA00236206C500915D38 /* AppView.swift */; };
 		EA0D93832338BEFC0081CA1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0D93822338BEFC0081CA1F /* AppDelegate.swift */; };
 		EA0D93882338BEFC0081CA1F /* Chillproject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA0D93862338BEFC0081CA1F /* Chillproject.xcdatamodeld */; };
@@ -46,10 +47,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		69129EF4233D0AC800542D9A /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		69129EF4233D0AC800542D9A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		692BEE7C233AA45C0033C9F1 /* KakaoLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginButton.swift; sourceTree = "<group>"; };
 		69385E1E235AFB8D00469F95 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		696742092341C3AF0093F5F8 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		69A6DA0F2390338B001E0992 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		69A8AA00236206C500915D38 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		EA0D937F2338BEFC0081CA1F /* Chillproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chillproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0D93822338BEFC0081CA1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,13 +105,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		69129EF3233D0AAA00542D9A /* Extension */ = {
+		69129EF3233D0AAA00542D9A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				69129EF4233D0AC800542D9A /* Helper.swift */,
-				696742092341C3AF0093F5F8 /* CircleImage.swift */,
+				69129EF4233D0AC800542D9A /* Color.swift */,
+				69A6DA0F2390338B001E0992 /* Text.swift */,
 			);
-			path = Extension;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		692BEE7B233AA43D0033C9F1 /* Interfacing */ = {
@@ -121,18 +123,34 @@
 			path = Interfacing;
 			sourceTree = "<group>";
 		};
+		6981BCD8238E622300582E96 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6981BCD9238E624500582E96 /* test page */ = {
+			isa = PBXGroup;
+			children = (
+				69A8AA00236206C500915D38 /* AppView.swift */,
+			);
+			path = "test page";
+			sourceTree = "<group>";
+		};
+		69A6DA1123903F0C001E0992 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				696742092341C3AF0093F5F8 /* CircleImage.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		69B8227F233BA7150070EACA /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		69B82280233BA71D0070EACA /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		EA0D93762338BEFC0081CA1F = {
@@ -160,14 +178,15 @@
 		EA0D93812338BEFC0081CA1F /* Chillproject */ = {
 			isa = PBXGroup;
 			children = (
-				69129EF3233D0AAA00542D9A /* Extension */,
+				69A6DA1123903F0C001E0992 /* Helpers */,
+				69129EF3233D0AAA00542D9A /* Extensions */,
 				69B8227F233BA7150070EACA /* Models */,
-				69B82280233BA71D0070EACA /* Views */,
+				6981BCD8238E622300582E96 /* Views */,
 				692BEE7B233AA43D0033C9F1 /* Interfacing */,
 				EA0D94252338F0070081CA1F /* SceneDelegate.swift */,
 				EA0D93822338BEFC0081CA1F /* AppDelegate.swift */,
 				EA6C5818233B744700A5281B /* SessionCheckPage.swift */,
-				69A8AA00236206C500915D38 /* AppView.swift */,
+				6981BCD9238E624500582E96 /* test page */,
 				EA0D938B2338BEFD0081CA1F /* Assets.xcassets */,
 				EA0D93902338BEFD0081CA1F /* LaunchScreen.storyboard */,
 				EA0D93932338BEFD0081CA1F /* Info.plist */,
@@ -354,9 +373,10 @@
 				EA0D93882338BEFC0081CA1F /* Chillproject.xcdatamodeld in Sources */,
 				6967420A2341C3AF0093F5F8 /* CircleImage.swift in Sources */,
 				69385E1F235AFB8D00469F95 /* ImagePickerView.swift in Sources */,
+				69A6DA102390338B001E0992 /* Text.swift in Sources */,
 				692BEE7D233AA45C0033C9F1 /* KakaoLoginButton.swift in Sources */,
 				EA0D93832338BEFC0081CA1F /* AppDelegate.swift in Sources */,
-				69129EF5233D0AC800542D9A /* Helper.swift in Sources */,
+				69129EF5233D0AC800542D9A /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

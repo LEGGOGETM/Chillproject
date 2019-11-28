@@ -35,8 +35,7 @@ struct AppView: View {
                 }.tag(2)
         }
         .font(.headline)
-        .accentColor(.orange)
-        
+        .accentColor(.newPrimaryColor)
     }
 }
 

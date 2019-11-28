@@ -8,13 +8,6 @@
 
 import SwiftUI
 
-// MARK: - Font size
-extension CGFloat {
-    static let small: CGFloat = 12
-    static let medium: CGFloat = 17
-    static let large: CGFloat = 28
-}
-
 // MARK: - UIColor
 extension UIColor {
     
@@ -40,3 +33,10 @@ extension UIColor {
         return rgb(r, g, b)
     }
 }
+
+// for Darkmode
+extension Color {
+    static let oldPrimaryColor = Color(UIColor(named: "systemIndigo")!)
+    static let newPrimaryColor = Color("newPrimaryColor")
+}
+
