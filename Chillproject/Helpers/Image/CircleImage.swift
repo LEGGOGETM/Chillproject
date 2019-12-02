@@ -8,28 +8,16 @@
 
 import SwiftUI
 
-enum ImageType {
-    case string(String)
-    case image(UIImage)
-}
-
-enum ImageMode: CGFloat {
-    case normal = 100
-    case profile = 200
-}
-
-enum ImageShape {
-    case rectangle
-    case circle
-}
 
 struct CircleImage: View {
     
+    @ObservedObject var imageLoader: ImageLoader
+
     var imageType: ImageType
-    let mode: ImageMode
-    let shape: ImageShape
+    let imageSize: ImageSize
+    
     var size: CGFloat {
-        return self.mode.rawValue
+        return self.imageSize.rawValue
     }
     
     var image: Image {
@@ -38,18 +26,22 @@ struct CircleImage: View {
             return Image(imageString)
         case .image(let image):
             return Image(uiImage: image)
+            
+        case .urlString:
+            let uiImage = ImageLoader.imageFromData(data: imageLoader.data)
+            return Image(uiImage: uiImage)
         }
     }
     
     var body: some View {
 
-        switch mode {
+        switch imageSize {
         case .normal:
             return AnyView(self.image
                 .resizable()
                 .clipShape(Circle())
                 .frame(width: size, height: size))
-        case .profile:
+        case .large:
             return AnyView(self.image
                 .resizable()
                 .clipShape(Circle())
@@ -57,20 +49,31 @@ struct CircleImage: View {
                 .overlay(Circle().stroke(Color.white, lineWidth: 2))
                 .shadow(radius: 10)
                 .scaledToFill())
+        default:
+            return AnyView(image)
         }
     }
     
-    private init(_ imageType: ImageType, _ shape: ImageShape, _ mode: ImageMode) {
-        self.mode = mode
+    private init(_ imageType: ImageType, _ imageSize: ImageSize, urlString: String? = nil) {
         self.imageType = imageType
-        self.shape = shape
+        self.imageSize = imageSize
+
+        if let urlString = urlString {
+            self.imageLoader = ImageLoader(urlString: urlString)
+        } else {
+            self.imageLoader = ImageLoader(urlString: "")
+        }
     }
 
-    init(named: String, _ shape: ImageShape, _ mode: ImageMode) {
-        self.init(ImageType.string(named), shape, mode)
+    init(named: String, imageSize: ImageSize) {
+        self.init(ImageType.string(named), imageSize)
     }
     
-    init(uiImage: UIImage, _ shape: ImageShape, _ mode: ImageMode) {
-        self.init(ImageType.image(uiImage), shape, mode)
+    init(uiImage: UIImage, imageSize: ImageSize) {
+        self.init(ImageType.image(uiImage), imageSize)
+    }
+    
+    init(urlString: String, imageSize: ImageSize) {
+        self.init(ImageType.urlString, imageSize, urlString: urlString)
     }
 }

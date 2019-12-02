@@ -25,8 +25,13 @@
         }
       ],
       "color" : {
-        "platform" : "osx",
-        "reference" : "systemIndigoColor"
+        "color-space" : "srgb",
+        "components" : {
+          "red" : "122",
+          "alpha" : "1.000",
+          "blue" : "241",
+          "green" : "113"
+        }
       }
     }
   ]

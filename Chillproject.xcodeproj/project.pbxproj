@@ -8,11 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		69129EF5233D0AC800542D9A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69129EF4233D0AC800542D9A /* Color.swift */; };
+		69222055239122620081571D /* ArtistDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69222054239122620081571D /* ArtistDetails.swift */; };
 		692BEE7D233AA45C0033C9F1 /* KakaoLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692BEE7C233AA45C0033C9F1 /* KakaoLoginButton.swift */; };
+		6937B93A2394BB8D001F7F3E /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937B9392394BB8D001F7F3E /* Artist.swift */; };
 		69385E1F235AFB8D00469F95 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69385E1E235AFB8D00469F95 /* ImagePickerView.swift */; };
 		6967420A2341C3AF0093F5F8 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696742092341C3AF0093F5F8 /* CircleImage.swift */; };
 		69A6DA102390338B001E0992 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A6DA0F2390338B001E0992 /* Text.swift */; };
+		69A6DA13239044F2001E0992 /* ArtistList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A6DA12239044F2001E0992 /* ArtistList.swift */; };
 		69A8AA01236206C500915D38 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A8AA00236206C500915D38 /* AppView.swift */; };
+		69D041C42395054C001407F7 /* SongRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D041C32395054C001407F7 /* SongRow.swift */; };
+		69D041C6239505B5001407F7 /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D041C5239505B5001407F7 /* RoundedImage.swift */; };
+		69D041C923950657001407F7 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D041C823950657001407F7 /* Image.swift */; };
+		69D041CB239506D7001407F7 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D041CA239506D7001407F7 /* ImageLoader.swift */; };
+		69D041CD239507FE001407F7 /* ArtistHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D041CC239507FE001407F7 /* ArtistHeader.swift */; };
 		EA0D93832338BEFC0081CA1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0D93822338BEFC0081CA1F /* AppDelegate.swift */; };
 		EA0D93882338BEFC0081CA1F /* Chillproject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA0D93862338BEFC0081CA1F /* Chillproject.xcdatamodeld */; };
 		EA0D938C2338BEFD0081CA1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA0D938B2338BEFD0081CA1F /* Assets.xcassets */; };
@@ -48,11 +56,19 @@
 
 /* Begin PBXFileReference section */
 		69129EF4233D0AC800542D9A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		69222054239122620081571D /* ArtistDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistDetails.swift; sourceTree = "<group>"; };
 		692BEE7C233AA45C0033C9F1 /* KakaoLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginButton.swift; sourceTree = "<group>"; };
+		6937B9392394BB8D001F7F3E /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		69385E1E235AFB8D00469F95 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		696742092341C3AF0093F5F8 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		69A6DA0F2390338B001E0992 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		69A6DA12239044F2001E0992 /* ArtistList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistList.swift; sourceTree = "<group>"; };
 		69A8AA00236206C500915D38 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		69D041C32395054C001407F7 /* SongRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongRow.swift; sourceTree = "<group>"; };
+		69D041C5239505B5001407F7 /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
+		69D041C823950657001407F7 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		69D041CA239506D7001407F7 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		69D041CC239507FE001407F7 /* ArtistHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistHeader.swift; sourceTree = "<group>"; };
 		EA0D937F2338BEFC0081CA1F /* Chillproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chillproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0D93822338BEFC0081CA1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA0D93872338BEFC0081CA1F /* Chillproject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Chillproject.xcdatamodel; sourceTree = "<group>"; };
@@ -114,6 +130,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		69222053239122420081571D /* Artist */ = {
+			isa = PBXGroup;
+			children = (
+				69A6DA12239044F2001E0992 /* ArtistList.swift */,
+				6937B93B2394FB6D001F7F3E /* Artist Detail */,
+			);
+			path = Artist;
+			sourceTree = "<group>";
+		};
 		692BEE7B233AA43D0033C9F1 /* Interfacing */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,9 +148,28 @@
 			path = Interfacing;
 			sourceTree = "<group>";
 		};
+		6937B9382394BB7C001F7F3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6937B9392394BB8D001F7F3E /* Artist.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6937B93B2394FB6D001F7F3E /* Artist Detail */ = {
+			isa = PBXGroup;
+			children = (
+				69222054239122620081571D /* ArtistDetails.swift */,
+				69D041CC239507FE001407F7 /* ArtistHeader.swift */,
+				69D041C32395054C001407F7 /* SongRow.swift */,
+			);
+			path = "Artist Detail";
+			sourceTree = "<group>";
+		};
 		6981BCD8238E622300582E96 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				69222053239122420081571D /* Artist */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -141,16 +185,20 @@
 		69A6DA1123903F0C001E0992 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				696742092341C3AF0093F5F8 /* CircleImage.swift */,
+				69D041C7239505FC001407F7 /* Image */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		69B8227F233BA7150070EACA /* Models */ = {
+		69D041C7239505FC001407F7 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				69D041C823950657001407F7 /* Image.swift */,
+				69D041CA239506D7001407F7 /* ImageLoader.swift */,
+				69D041C5239505B5001407F7 /* RoundedImage.swift */,
+				696742092341C3AF0093F5F8 /* CircleImage.swift */,
 			);
-			path = Models;
+			path = Image;
 			sourceTree = "<group>";
 		};
 		EA0D93762338BEFC0081CA1F = {
@@ -180,7 +228,7 @@
 			children = (
 				69A6DA1123903F0C001E0992 /* Helpers */,
 				69129EF3233D0AAA00542D9A /* Extensions */,
-				69B8227F233BA7150070EACA /* Models */,
+				6937B9382394BB7C001F7F3E /* Model */,
 				6981BCD8238E622300582E96 /* Views */,
 				692BEE7B233AA43D0033C9F1 /* Interfacing */,
 				EA0D94252338F0070081CA1F /* SceneDelegate.swift */,
@@ -367,13 +415,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69A6DA13239044F2001E0992 /* ArtistList.swift in Sources */,
+				69D041C42395054C001407F7 /* SongRow.swift in Sources */,
 				EA6C5819233B744700A5281B /* SessionCheckPage.swift in Sources */,
 				EA0D94262338F0070081CA1F /* SceneDelegate.swift in Sources */,
 				69A8AA01236206C500915D38 /* AppView.swift in Sources */,
 				EA0D93882338BEFC0081CA1F /* Chillproject.xcdatamodeld in Sources */,
 				6967420A2341C3AF0093F5F8 /* CircleImage.swift in Sources */,
+				69D041C6239505B5001407F7 /* RoundedImage.swift in Sources */,
+				69D041C923950657001407F7 /* Image.swift in Sources */,
 				69385E1F235AFB8D00469F95 /* ImagePickerView.swift in Sources */,
+				69222055239122620081571D /* ArtistDetails.swift in Sources */,
+				69D041CD239507FE001407F7 /* ArtistHeader.swift in Sources */,
+				69D041CB239506D7001407F7 /* ImageLoader.swift in Sources */,
 				69A6DA102390338B001E0992 /* Text.swift in Sources */,
+				6937B93A2394BB8D001F7F3E /* Artist.swift in Sources */,
 				692BEE7D233AA45C0033C9F1 /* KakaoLoginButton.swift in Sources */,
 				EA0D93832338BEFC0081CA1F /* AppDelegate.swift in Sources */,
 				69129EF5233D0AC800542D9A /* Color.swift in Sources */,

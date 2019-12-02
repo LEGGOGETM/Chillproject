@@ -17,6 +17,7 @@ extension UIColor {
     
     static let defaultButton = hex(0x292929)
     static let kakaoBrown = hex(0x452007)
+    static let lightGray = hex(0x9A9A9A)
     
     static func rgb(_ red: CGFloat, _ green: CGFloat, _ blue: CGFloat) -> UIColor {
         return UIColor(

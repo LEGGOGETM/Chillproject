@@ -8,9 +8,10 @@
 
 import SwiftUI
 
-// MARK: - Font size
+// MARK: - 폰트 크기
 extension CGFloat {
-    static let small: CGFloat = 12
+    static let tiny: CGFloat = 12
+    static let small: CGFloat = 14
     static let medium: CGFloat = 17
     static let large: CGFloat = 36
 }
