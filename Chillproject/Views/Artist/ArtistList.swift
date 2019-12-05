@@ -12,13 +12,19 @@ struct ArtistList: View {
     
     let items = ["The Quiett"]
     
+    @State var searchTerm: String = ""
+    
     var body: some View {
         List {
+            
+            SearchBar(searchTerm: $searchTerm)
+            
             ForEach(items, id: \.self) { name in
                 NavigationLink(destination: ArtistDetails(name: name)) {
                     Text(name)
                 }
             }
         }.navigationBarTitle("Artist")
+        
     }
 }

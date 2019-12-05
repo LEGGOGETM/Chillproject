@@ -21,6 +21,7 @@
 		69D041C923950657001407F7 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D041C823950657001407F7 /* Image.swift */; };
 		69D041CB239506D7001407F7 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D041CA239506D7001407F7 /* ImageLoader.swift */; };
 		69D041CD239507FE001407F7 /* ArtistHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D041CC239507FE001407F7 /* ArtistHeader.swift */; };
+		69EDC6302398D2E80088D582 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EDC62F2398D2E80088D582 /* SearchBar.swift */; };
 		EA0D93832338BEFC0081CA1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0D93822338BEFC0081CA1F /* AppDelegate.swift */; };
 		EA0D93882338BEFC0081CA1F /* Chillproject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA0D93862338BEFC0081CA1F /* Chillproject.xcdatamodeld */; };
 		EA0D938C2338BEFD0081CA1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA0D938B2338BEFD0081CA1F /* Assets.xcassets */; };
@@ -69,6 +70,7 @@
 		69D041C823950657001407F7 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		69D041CA239506D7001407F7 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		69D041CC239507FE001407F7 /* ArtistHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistHeader.swift; sourceTree = "<group>"; };
+		69EDC62F2398D2E80088D582 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		EA0D937F2338BEFC0081CA1F /* Chillproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chillproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0D93822338BEFC0081CA1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA0D93872338BEFC0081CA1F /* Chillproject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Chillproject.xcdatamodel; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			children = (
 				692BEE7C233AA45C0033C9F1 /* KakaoLoginButton.swift */,
 				69385E1E235AFB8D00469F95 /* ImagePickerView.swift */,
+				69EDC62F2398D2E80088D582 /* SearchBar.swift */,
 			);
 			path = Interfacing;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				69D041CB239506D7001407F7 /* ImageLoader.swift in Sources */,
 				69A6DA102390338B001E0992 /* Text.swift in Sources */,
 				6937B93A2394BB8D001F7F3E /* Artist.swift in Sources */,
+				69EDC6302398D2E80088D582 /* SearchBar.swift in Sources */,
 				692BEE7D233AA45C0033C9F1 /* KakaoLoginButton.swift in Sources */,
 				EA0D93832338BEFC0081CA1F /* AppDelegate.swift in Sources */,
 				69129EF5233D0AC800542D9A /* Color.swift in Sources */,
